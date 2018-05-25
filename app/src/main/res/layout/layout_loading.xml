@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialog_view"
+    android:layout_width="124dp"
+    android:layout_height="88dp"
+    android:background="@drawable/prograss_bg"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+
+    >
+
+
+    <RelativeLayout
+        android:id="@+id/rl_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:id="@+id/iv_loading_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:indeterminate="true"
+            android:src="@mipmap/loading_outer" />
+
+        <ImageView
+            android:id="@+id/iv_loading_center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/loading_inner" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_loading_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="正在努力的获取tn中,请稍候..."
+        android:textColor="#333"
+        android:textSize="13sp" />
+
+</LinearLayout>
